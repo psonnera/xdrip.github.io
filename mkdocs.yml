@@ -1,0 +1,8 @@
+site_name: xDrip+
+nav:
+    - Home: index.md
+    - Getting started: install.md
+ 
+   
+theme: 
+   name: readthedocs
