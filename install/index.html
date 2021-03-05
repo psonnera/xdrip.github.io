@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Getting started - xDrip+</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Getting started";
+    var mkdocs_page_input_path = "install.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> xDrip+</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Getting started</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#which-one-to-install">Which one to install?</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#latest-release">Latest release</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pre-release">Pre-release</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#note-private-versions">Note: Private versions</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#install-xdrip_1">Install xDrip+</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#authorize-background-activity">Authorize background activity</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#select-your-data-source">Select your data source</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#dexcom">Dexcom</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#freestyle-libre">Freestyle Libre</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#others">Others</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#more">More</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#dexcom-g4">Dexcom G4</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#dexcom-g5-g6">Dexcom G5 / G6</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">xDrip+</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Getting started</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="install-xdrip">Install xDrip+</h1>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>You need an Android phone.</p>
+<ul>
+<li>Minimum supported Android version is 4.4 but 6 and above is recommended.</li>
+<li>If you will connect xDrip+ to a sensor your phone must support Bluetooth Low Energy (BLE): you can use utilities <a href="https://play.google.com/store/apps/details?id=com.myan.michaelyanyoga.bluetoothchecker">like this</a> one to check.</li>
+<li>In order to connect to a Bluetooth CGM your phone needs to have location enabled (GPS).</li>
+<li>If you want to use the embedded master - follower function of xDrip+ (called xDrip+ Sync) your phone needs to have the <a href="https://play.google.com/store/apps/details?id=com.google.android.gms">Google Play Services</a> installed.</li>
+<li>If you wish to use scanning features for Libre sensors your phone needs an NFC reader.</li>
+<li>If using Android 10 and above make sure you use a recent version of xDrip+ (see below).</li>
+</ul>
+<p></br></p>
+<h2 id="which-one-to-install">Which one to install?</h2>
+<p>xDrip+ is not available in the Google Play store by developers decision. You will find all releases in <a href="https://github.com/NightscoutFoundation/xDrip/releases">Github</a>.<br />
+If you don't know which one to select you have two choices:</p>
+<h3 id="latest-release">Latest release</h3>
+<p>Latest release is a stable version of xDrip+. It doesn't have all the newest features but has proven stability and doesn't suffer severe bugs. It's a safe version to start with.</p>
+<p>You can download it <a href="https://xdrip-plus-updates.appspot.com/stable/xdrip-plus-latest.apk">here</a>.</p>
+<h3 id="pre-release">Pre-release</h3>
+<p>Pre-release include most recent xDrip+ developments like translations, new features and bug fixes. And it might also contain some bugs... Still, it is the version you want to use to benefit most recent improvements.</p>
+<p>All xDrip+ versions are available <a href="https://github.com/NightscoutFoundation/xDrip/releases">here</a>.</p>
+<p>Expand the assets and select the <code>.apk</code> file. You will find it in your phone <code>Downloads</code> directory.</p>
+<p><img src="../images/Install01.png" style="zoom:90%;" /></p>
+<p><em>Note: don't use Facebook links to download xDrip+ but copy and paste the link into a browser (like Chrome).</em></p>
+<p></br></p>
+<h4 id="note-private-versions">Note: Private versions</h4>
+<p>Some developers add features and customizations that are not available in the official pre-releases until the author will create a Pull Request in xDrip+ and get it merged in the main project. You can use these versions but need to understand they might be supported only by their creator. xDrip+ automatic updates won't work with private versions.</p>
+<p></br></p>
+<h2 id="install-xdrip_1">Install xDrip+</h2>
+<p>Once downloaded, install the xDrip+ apk.</p>
+<p><img src="../images/Install02.png" style="zoom:75%;" /></p>
+<p><strong>You need to authorize installation of apps from unknown sources in Android security settings.</strong><br />
+xDrip+ is virus and malware free: being open source and controlled by the main developer make its distribution safe if you download it from GitHub.</p>
+<p><img src="../images/Install04.png" style="zoom:75%;" /></p>
+<p>Once installed, open xDrip+.</p>
+<p><img src="../images/Install03.png" style="zoom:75%;" /></p>
+<p><strong>Read</strong> and acknowledge the important Warning.</p>
+<p><img src="../images/Install05.png" style="zoom:75%;" /></p>
+<p>​   Do NOT use or rely on this software or any associated materials for any medical purpose or decision.<br />
+​   Do NOT rely on this system for any real-time alarms or time critical data.<br />
+​   Do NOT use or rely on this system for treatment decisions or use as a substitute for professional healthcare judgement.<br />
+​   All software and materials have been provided for informational purposes only as a proof of concept to assist possibilities for further research.<br />
+​   No claims at all are made about fitness for any purpose and everything is provided <strong>AS IS</strong>. Any part of the system can fail at any time.<br />
+​   Always seek the advice of a qualified healthcare professional for any medical questions.<br />
+​   Always follow your glucose-sensor or other device manufacturers\' instructions when using any equipment; do not discontinue use of accompanying reader or receiver, other than as advised by your doctor.<br />
+​   This software is not associated with or endorsed by any equipment manufacturer and all trademarks are those of their respective owners.<br />
+​   Your use of this software is entirely at your own risk.<br />
+​   No charge has been made by the developers for the use of this software.<br />
+​   This is an open-source project which has been created by volunteers. The source code is published free and open-source for you to inspect and evaluate.<br />
+​   By using this software and/or website you agree that you are over 18 years of age and have read, understood and agree to all of the above.</p>
+<p><img src="../images/Install06.png" style="zoom:75%;" /></p>
+<p></br></p>
+<h4 id="authorize-background-activity">Authorize background activity</h4>
+<p>xDrip+ must have the right to run in background: it must be whitelisted to battery optimization. This is essential to a correct functioning. It should ask you to allow this authorization. If it doesn't or you need to verify this later, you'll have to check it in your phone <code>Settings</code> - <code>Apps</code> - <code>xDrip+</code>. Consult your phone manual as  it will depend on Android version and manufacturer.</p>
+<p><img src="../images/Install07.png" style="zoom:75%;" /></p>
+<p></br></p>
+<h2 id="select-your-data-source">Select your data source</h2>
+<p>If you want to connect xDrip+ directly to your sensor, select it in the wizard.</p>
+<p><img src="../images/Install08.png" style="zoom:75%;" /></p>
+<p></br></p>
+<p>If you don't see the wizard you can start it using the <code>START SOURCE SETUP WIZARD</code> button on the main screen.</p>
+<p><img src="../images/Install12.png" style="zoom:75%;" /></p>
+<p></br></p>
+<p>If you don't see this button you can bring it back to display with a long press on the xDrip+ icon blood drop and enable source wizard button.</p>
+<p><img src="../images/Install13.png" style="zoom:75%;" /></p>
+<p></br></p>
+<h3 id="dexcom">Dexcom</h3>
+<p>In order to connect xDrip+ to a Dexcom G5 or G6 sensor you need to uninstall the Dexcom app from this phone or any other phone connected to it. The Dexcom receiver will continue to receive the sensor signal as it's using another Bluetooth channel.<br />
+Note that xDrip+ will allow the use of Dexcom Share servers but will <strong>not upload data to Clarity</strong>. If you decide to use this solution, it is recommended to use <a href="https://www.tidepool.org/">Tidepool</a> or <a href="https://nightscout.github.io/">Nightscout</a> to generate your reports.</p>
+<p>If you want to use xDrip+ but you still want to connect your sensor to the Dexcom app, go back to the first page and select Other. You can use xDrip+ either as a Dexcom Share follower (but you will need network access) or <a href="https://docs.google.com/forms/d/e/1FAIpQLScD76G0Y-BlL4tZljaFkjlwuqhT83QlFM5v6ZEfO7gCU98iJQ/viewform?fbzx=2196386787609383750&amp;fbclid=IwAR2aL8Cps1s6W8apUVK-gOqgGpA-McMPJj9Y8emf_P0-_gAsmJs6QwAY-o0">build your own Dexcom app</a> (enabling broadcast to xDrip+) and select 640G/670G or Eversense as the data source.</p>
+<p><img src="../images/Install09.png" style="zoom:75%;" /></p>
+<p>Else continue here:</p>
+<p>Dexcom G4<br />
+Dexcom G5<br />
+Decom G6</p>
+<p></br></p>
+<h3 id="freestyle-libre">Freestyle Libre</h3>
+<p>You can use xDrip+ to scan your Libre (<strong>Not</strong> 14 days US version) sensor selecting the any of these data sources if your phone has an NFC reader. Note that there is only limited value in doing so as the only advantage is to be able to calibrate the readings. In order to get the best of xDrip+ it is recommended that you buy an additional bridge device doing the sensor scan automatically every 5 minutes.</p>
+<p><img src="../images/Install10.png" style="zoom:75%;" /></p>
+<p>Continue here:</p>
+<p>Bridge devices like LimiTTer (obsolete), blueReader (obsolete), Blucon, miaomiao (Tomato), Bubble or Droplet<br />
+Patched Sony SWR50<br />
+Patched app (Libre 2 not <strong>US</strong> version)<br />
+Libre 2 (<strong>not</strong> US version)</p>
+<p></br></p>
+<h3 id="others">Others</h3>
+<p><img src="../images/Install11.png" style="zoom:75%;" /></p>
+<p>640G/670G for the Medtronic uploader app and the BYOD app. <br />
+Medtrum A6/S7<br />
+Nightscout Follower<br />
+Dexcom Share Follower<br />
+Eversense with the Esel app</p>
+<p></br></p>
+<h3 id="more">More</h3>
+<p>If you haven't found the data source you were looking for in the wizard you can select it from <code>Settings</code>.</p>
+<p>Touch the back button on your phone until you're back to the main screen. Select the hamburger menu top left then <code>Settings</code>.</p>
+<p>Select Hardware data source.</p>
+<p><img src="../images/hamburger_menu.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-S.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-S-HWDS.png" style="zoom:75%;" /></p>
+<p>This will display the full list of available data sources.</p>
+<p><img src="../images/M-S-HWDS-List.png" style="zoom:75%;" /></p>
+<p></br></p>
+<h4 id="dexcom-g4">Dexcom G4</h4>
+<p>Bluetooth Wixel<br />
+xBridge Wixel<br />
+Wifi Wixel / Parakeet<br />
+Wifi Wixel + BT Wixel<br />
+Wifi Wixel + Bridge Wixel<br />
+G4 Share receiver</p>
+<h4 id="dexcom-g5-g6">Dexcom G5 / G6</h4>
+<p>Dexcom G5<br />
+Dexcom G6</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
