@@ -119,9 +119,9 @@ If you want to use xDrip+ but you still want to connect your sensor to the Dexco
 
 Else continue here:
 
-Dexcom G4  
-Dexcom G5  
-Decom G6
+[Dexcom G4](../dexcom-g4)  
+[Dexcom G5](../dexcom-g5)  
+[Dexcom G6](../dexcom-g6)
 
 </br>
 
@@ -133,10 +133,10 @@ You can use xDrip+ to scan your Libre (**Not** 14 days US version) sensor select
 
 Continue here:
 
-Bridge devices like LimiTTer (obsolete), blueReader (obsolete), Blucon, miaomiao (Tomato), Bubble or Droplet  
-Patched Sony SWR50  
-Patched app (Libre 2 not **US** version)  
-Libre 2 (**not** US version)
+[Bridge devices](../libre-bridge) like LimiTTer (obsolete), blueReader (obsolete), Blucon, miaomiao (Tomato), Bubble or Droplet  
+LibreAlarm: Patched [Sony SWR50](../libre-swr50)  
+[Patched app](../libre-patched) (Libre 2 not **US** version)  
+[Libre 2](../libre2) (**not** US version)
 
 </br>
 
@@ -144,11 +144,11 @@ Libre 2 (**not** US version)
 
 <img src="../images/Install11.png" style="zoom:75%;" />
 
-640G/670G for the Medtronic uploader app and the BYOD app.   
-Medtrum A6/S7  
-Nightscout Follower  
-Dexcom Share Follower  
-Eversense with the Esel app
+[640G/670G](../medtronic) with the Medtronic uploader app and the [BYO Dexcom app](../dexcom-byo).   
+[Medtrum](../medtrum) A6/S7  
+[Nightscout Follower](../nightscout)  
+[Dexcom Share Follower](../dexcom-follow)  
+[Eversense](../eversense) with the Esel app
 
 </br>
 
