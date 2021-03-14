@@ -108,24 +108,24 @@ If you don't see this button you can bring it back to display with a long press 
 
 </br>
 
-### Dexcom
+### G4 G5 G6
 
-In order to connect xDrip+ to a Dexcom G5 or G6 sensor you need to uninstall the Dexcom app from this phone or any other phone connected to it. The Dexcom receiver will continue to receive the sensor signal as it's using another Bluetooth channel.  
-Note that xDrip+ will allow the use of Dexcom Share servers but will **not upload data to Clarity**. If you decide to use this solution, it is recommended to use [Tidepool](https://www.tidepool.org/) or [Nightscout](https://nightscout.github.io/) to generate your reports.
+In order to connect xDrip+ to a G5 or G6 sensor you need to uninstall the vendor app from this phone or any other phone connected to it. The receiver will continue to receive the sensor signal as it's using another Bluetooth channel.  
+Note that xDrip+ will allow the use of Dex Share servers but will **not upload data to Clarity**. If you decide to use this solution, it is recommended to use [Tidepool](https://www.tidepool.org/) or [Nightscout](https://nightscout.github.io/) to generate your reports.
 
-If you want to use xDrip+ but you still want to connect your sensor to the Dexcom app, go back to the first page and select Other. You can use xDrip+ either as a Dexcom Share follower (but you will need network access) or [build your own Dexcom app](https://docs.google.com/forms/d/e/1FAIpQLScD76G0Y-BlL4tZljaFkjlwuqhT83QlFM5v6ZEfO7gCU98iJQ/viewform?fbzx=2196386787609383750&fbclid=IwAR2aL8Cps1s6W8apUVK-gOqgGpA-McMPJj9Y8emf_P0-_gAsmJs6QwAY-o0) (enabling broadcast to xDrip+) and select 640G/670G or Eversense as the data source.
+If you want to use xDrip+ but you still want to connect your sensor to the vendor app, go back to the first page and select Other. You can use xDrip+ either as a Dex Share follower (but you will need network access) or [build your own app](https://docs.google.com/forms/d/e/1FAIpQLScD76G0Y-BlL4tZljaFkjlwuqhT83QlFM5v6ZEfO7gCU98iJQ/viewform) (enabling broadcast to xDrip+) and select 640G/670G or Eversense as the data source.
 
 <img src="../images/Install09.png" style="zoom:75%;" />
 
 Else continue here:
 
-[Dexcom G4](../dexcom-g4)  
-[Dexcom G5](../dexcom-g5)  
-[Dexcom G6](../dexcom-g6)
+[G4](../g4)  
+[G5](../g5)  
+[G6](../g6)
 
 </br>
 
-### Freestyle Libre
+### Libre
 
 You can use xDrip+ to scan your Libre (**Not** 14 days US version) sensor selecting the any of these data sources if your phone has an NFC reader. Note that there is only limited value in doing so as the only advantage is to be able to calibrate the readings. In order to get the best of xDrip+ it is recommended that you buy an additional bridge device doing the sensor scan automatically every 5 minutes.
 
@@ -144,17 +144,17 @@ LibreAlarm: Patched [Sony SWR50](../libre-swr50)
 
 <img src="../images/Install11.png" style="zoom:75%;" />
 
-[640G/670G](../medtronic) with the Medtronic uploader app and the [BYO Dexcom app](../dexcom-byo).   
+[640G/670G](../medtronic) with the Medtronic uploader app and the [G5/G6 BYO app](../byo).   
 [Medtrum](../medtrum) A6/S7  
 [Nightscout Follower](../nightscout)  
-[Dexcom Share Follower](../dexcom-follow)  
+[Dex Share Follower](../dex-follow)  
 [Eversense](../eversense) with the Esel app
 
 </br>
 
-### More
+### Hardware data source list
 
-If you haven't found the data source you were looking for in the wizard you can select it from `Settings`.
+If you haven't found the data source you were looking for in the wizard or you want to change it, you can select it from `Settings`.
 
 Touch the back button on your phone until you're back to the main screen. Select the hamburger menu top left then `Settings`.
 
@@ -172,7 +172,7 @@ This will display the full list of available data sources.
 
 </br>
 
-#### Dexcom G4
+**G4**
 
 Bluetooth Wixel  
 xBridge Wixel  
@@ -181,8 +181,10 @@ Wifi Wixel + BT Wixel
 Wifi Wixel + Bridge Wixel  
 G4 Share receiver
 
-#### Dexcom G5 / G6
+Continue here [G4](../g4) 
 
-Dexcom G5  
-Dexcom G6
+**G5 / G6**
+
+[G5](../g5)  
+[G6](../g6)
 
