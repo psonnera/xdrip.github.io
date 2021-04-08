@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Maintenance - xDrip+</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Maintenance";
+    var mkdocs_page_input_path = "maintenance.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> xDrip+</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../install/">Getting started</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../sensorsettings/">Sensors</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Maintenance</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#update-xdrip">Update xDrip+</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#manual-update">Manual update</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#automated-update">Automated update</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#reinstall-xdrip">Reinstall xDrip+</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#backup">Backup</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#backup-settings">Backup settings</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#backup-the-database">Backup the database</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#restore">Restore</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#restore-settings">Restore settings</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#restore-a-database">Restore a database</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#new-phone-migration">New phone migration</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">xDrip+</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Maintenance</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="maintenance-operations">Maintenance operations</h1>
+<h2 id="update-xdrip">Update xDrip+</h2>
+<p>You can easily upgrade (more recent) or downgrade (older) your xDrip+ version simply by installing another version on top of the current one. This means you don't need to uninstall the current version, hence avoid losing all data and settings.</p>
+<p>There are two methods to update xDrip+, you can do it either manually or set the app to inform you an update is available and let it handle the download.</p>
+<h3 id="manual-update">Manual update</h3>
+<p>Follow the <a href="../install/#which-one-to-install">install guidelines</a>.</p>
+<h3 id="automated-update">Automated update</h3>
+<p>You can set xDrip+ to inform you when an update is available and decide on which type of update you want.</p>
+<p><code>Menu</code> / <code>Settings</code> / <code>xDrip+ Update Settings</code></p>
+<p><img src="../images/hamburger_menu.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-S.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-S-U.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-S-Update1.png" style="zoom:75%;" /></p>
+<p>First  select the update type you're interested in with <code>Update channel</code></p>
+<p><img src="../images/M-S-Update2.png" style="zoom:75%;" /></p>
+<p><code>Stable</code> versions, known as releases are rarely refreshed and will not include latest developments. If your system is stable and you don't need new features, keep a released version.</p>
+<p><code>Beta</code> versions are rarely built and might address some more recent issues.</p>
+<p>If you need to update you most probably want to select <code>Alpha</code>.</p>
+<p>Once selected, turn on the Automatic update check.</p>
+<blockquote>
+<p>Note: If you selected Alpha, a new option will be available in <code>Update channel</code>: <code>Nightly</code>. You can select this option to have automatic download of the automatic nightly builds. This is not recommended. Use a nightly build only if you need a specific feature or experience issues that are currently been worked on.</p>
+</blockquote>
+<p><img src="../images/M-S-Update3.png" style="zoom:75%;" /></p>
+<p>If an update is available it should start downloading now.</p>
+<p>If the update doesn't start, go back to the main xDrip+ display and select the upper right 3 dots menu.</p>
+<p><img src="../images/3dots_menu.png" style="zoom:75%;" /></p>
+<p>Select <code>Check for updated version</code>.</p>
+<p><img src="../images/3DM.png" style="zoom:75%;" /></p>
+<p>If an update is available the following screen should show. Select <code>DOWNLOAD NOW</code>.<br />
+If download fails, try de-selecting <code>Use internal downloader</code> and retry.</p>
+<p><img src="../images/M-S-Update4.png" style="zoom:75%;" /></p>
+<p>Once download completes, xDrip+ will run the installer.</p>
+<p><img src="../images/M-S-Update5.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-S-Update6.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-S-Update7.png" style="zoom:75%;" /></p>
+<p>xDrip+ now updated, <a href="../install/#verify-which-version-is-installed">check your version</a> if you want to be sure.</p>
+<p></br></p>
+<h2 id="reinstall-xdrip">Reinstall xDrip+</h2>
+<p>This shouldn't usually be necessary but you might need to uninstall xDrip+ to troubleshoot, or if you need to change it to or from a private version.. For this, follow this sequence: <a href="#backup">backup</a>, uninstall the xDrip+ app (the same way you'd remove any app from your phone), <a href="../install/#which-one-to-install">install</a> and then <a href="#restore">restore</a>.<br />
+Once complete check all your settings and recreate your alarms.</p>
+<h2 id="backup">Backup</h2>
+<h3 id="backup-settings">Backup settings</h3>
+<p><code>Menu</code> / <code>Settings</code> / <code>Load/Save setting to SDcard</code></p>
+<p><img src="../images/hamburger_menu.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-S.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-S-LSS.png" style="zoom:75%;" /></p>
+<p></br></p>
+<p>You also can access it from the 3 dots menu:</p>
+<p><img src="../images/3dots_menu.png" style="zoom:75%;" /></p>
+<p>Select <code>Import Export features</code>.</p>
+<p><img src="../images/3DM.png" style="zoom:75%;" /></p>
+<p>Select <code>Load/Save setting to SDcard</code></p>
+<p><img src="../images/3DM-IE.png" style="zoom:75%;" /></p>
+<p></br></p>
+<p>Select <code>SAVE ALL SETTINGS TO SDCARD</code></p>
+<p><img src="../images/M-S-Settings.png" style="zoom:75%;" /></p>
+<p>Your settings will be saved in <code>/storage/emulated/0/Download/xDrip-Export</code><br />
+You need to authorize xDrip+ to access your phone memory.<br />
+Existing backup will be overwritten.</p>
+<p><img src="../images/M-S-SettingsLoc.png" style="zoom:75%;" /></p>
+<p>If you want to keep a safe copy, send the file to yourself by email, save in on a cloud drive or copy it via USB to a computer.</p>
+<p></br></p>
+<h3 id="backup-the-database">Backup the database</h3>
+<p>The database contains all BG readings, treatments and notes. It is strongly recommended that you backup your database and keep a copy on another device if you want to keep your existing data and as a safety precaution against a phone loss, crash, ...<br />
+Using upload to <a href="https://nightscout.github.io/">Nightscout</a> is also strongly recommended.</p>
+<p>From the main xDrip+ display select the upper right 3 dots menu.</p>
+<p><img src="../images/3dots_menu.png" style="zoom:75%;" /></p>
+<p>Select <code>Import Export features</code>.</p>
+<p><img src="../images/3DM.png" style="zoom:75%;" /></p>
+<p>Select <code>Export database</code>.</p>
+<p><img src="../images/3DM-IE.png" style="zoom:75%;" /></p>
+<p></br></p>
+<p>The current database will be saved in <code>/storage/emulated/0/xDrip</code><br />
+You need to authorize xDrip+ to access your phone memory.<br />
+You can make as many backups as your memory can store.</p>
+<p><img src="../images/3DM-IE-Loc.png" style="zoom:75%;" /></p>
+<p>Your backup will be named <code>exportYYYYMMDD-HHMMSS.zip</code> with <code>YYYY</code> current year, <code>MM</code> month, <code>DD</code> day, and <code>HHMMSS</code> for hour minutes and seconds. This will allow you to have multiple backups identified by a unique timestamp.</p>
+<p>If you want to keep a safe copy, send the file to yourself by email, save in on a cloud drive or copy it via USB to a computer.</p>
+<p></br></p>
+<h2 id="restore">Restore</h2>
+<h3 id="restore-settings">Restore settings</h3>
+<p>When xDrip+ install is complete, if a backup is available, xDrip+ will propose to restore it automatically. <br />
+Select <code>RESTORE SETTINGS</code></p>
+<p><img src="../images/3DM-BR-Restore5.png" style="zoom:75%;" /></p>
+<p></br></p>
+<p>If you don't see this message, restore it manually.</p>
+<p><code>Menu</code> / <code>Settings</code> / <code>Load/Save setting to SDcard</code></p>
+<p><img src="../images/hamburger_menu.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-S.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-S-LSS.png" style="zoom:75%;" /></p>
+<p></br></p>
+<p>You also can access it from the 3 dots menu:</p>
+<p><img src="../images/3dots_menu.png" style="zoom:75%;" /></p>
+<p>Select <code>Import Export features</code>.</p>
+<p><img src="../images/3DM.png" style="zoom:75%;" /></p>
+<p>Select <code>Load/Save setting to SDcard</code></p>
+<p><img src="../images/3DM-IE.png" style="zoom:75%;" /></p>
+<p></br></p>
+<p>Select <code>LOAD ALL SETTINGS FROM SDCARD</code></p>
+<p><img src="../images/M-S-Settings.png" style="zoom:75%;" /></p>
+<p></br></p>
+<h3 id="restore-a-database">Restore a database</h3>
+<p>When xDrip+ install is complete, if a database backup is available, xDrip+ will propose to restore it automatically.</p>
+<p><img src="../images/3DM-BR-Restore1.png" style="zoom:75%;" /></p>
+<p>Make sure this is the database you want to restore then select <code>RESTORE</code></p>
+<p><img src="../images/3DM-BR-Restore2.png" style="zoom:75%;" /></p>
+<p><em>Note: the current database will be exported first, for safety, you will find it in the list named <code>b4import</code> and the date/time the import was done. This will allow you to recover it if necessary.</em></p>
+<p></br></p>
+<p>If you want to restore a specific backup, from the main xDrip+ display select the upper right 3 dots menu.</p>
+<p><img src="../images/3dots_menu.png" style="zoom:75%;" /></p>
+<p>Select <code>Import Export features</code>.</p>
+<p><img src="../images/3DM.png" style="zoom:75%;" /></p>
+<p>Select <code>Import database</code>.</p>
+<p><img src="../images/3DM-IE.png" style="zoom:75%;" /></p>
+<p>Instructions are displayed. You don't need to move the backup file if you didn't move it from another device, you don't need to unzip it. Be cautious on restoring a database with a different xDrip+ version: it is recommended that you install the <a href="../install/#verify-which-version-is-installed">xDrip+ version</a> that was used to perform the export before importing, then you can update xDrip+.</p>
+<p><img src="../images/3DM-BR-Restore6.png" style="zoom:75%;" /></p>
+<p>Select the database you want to import, look at the date and size (use the phone file browser) to be sure to pick the right one.</p>
+<p><img src="../images/3DM-BR-Restore4.png" style="zoom:75%;" /></p>
+<p>Once sure you're trying to restore the correct backup, <code>Ok</code></p>
+<p><img src="../images/3DM-BR-Restore7.png" style="zoom:75%;" /></p>
+<p><img src="../images/3DM-BR-Restore2.png" style="zoom:75%;" /></p>
+<p>If you restored the wrong database, just redo the same steps and select the latest <code>b4import</code> version to roll back.</p>
+<p></br></p>
+<h2 id="new-phone-migration">New phone migration</h2>
+<p>Perform the following operations:</p>
+<p>On the old phone:</p>
+<ol>
+<li><a href="#backup">Backup settings and database</a></li>
+<li>Send yourself both settings and database backups, or copy them to a computer.</li>
+</ol>
+<p>On the new phone:</p>
+<ol>
+<li><a href="../install/#which-one-to-install">Install</a> the <a href="../install/#verify-which-version-is-installed">same version</a> of xDrip+ you are using on the old phone.</li>
+<li><a href="#backup">Backup settings and database</a> this is only needed to create the correct folders.</li>
+<li>Copy the files you sent yourself via mail, or from a computer to the right folders.</li>
+<li><a href="#restore">Restore settings and database</a>.  </li>
+</ol>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../sensorsettings/" class="btn btn-neutral" title="Sensors"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../sensorsettings/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

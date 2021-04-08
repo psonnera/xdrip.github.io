@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Dexcom follow - xDrip+</title>
+  <title>G4 setup - xDrip+</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Dexcom follow";
-    var mkdocs_page_input_path = "dexcom-follow.md";
+    var mkdocs_page_name = "G4 setup";
+    var mkdocs_page_input_path = "g4.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -55,6 +55,14 @@
                     <li class="toctree-l1"><a class="reference internal" href="../install/">Getting started</a>
                     </li>
                 </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../sensorsettings/">Sensors</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../maintenance/">Maintenance</a>
+                    </li>
+                </ul>
       </div>
     </div>
     </nav>
@@ -76,7 +84,7 @@
     
       
     
-    <li>Dexcom follow</li>
+    <li>G4 setup</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -87,7 +95,30 @@
           <div role="main">
             <div class="section">
               
-                
+                <h1 id="g4-setup">G4 setup</h1>
+<p><strong><em>Note: Legacy sensor/transmitter.</em></strong></p>
+<p></br></p>
+<p>The G4 transmitter uses radiofrequencies and not Bluetooth.</p>
+<p>You need a bridge device to convert the signal to Bluetooth in order to be able to receive it with your phone.</p>
+<p><img src="../images/Install14.png" style="zoom:90%;" /></p>
+<p>If you're using a Wixel select the type:</p>
+<p><a href="https://github.com/jstevensog/wixel-sdk/blob/master/apps/xBridge2/xBridge2.pdf">xBridge Wixel</a><br />
+<a href="https://github.com/StephenBlackWasAlreadyTaken/xDrip/wiki/xDrip-Wireless-Bridge">Bluetooth Wixel</a></p>
+<p><img src="../images/Install15.png" style="zoom:90%;" /></p>
+<p>If required (xBridge) enter the transmitter code.</p>
+<p>Then pair it to Bluetooth using xDrip+: scan Bluetooth and select it from the list.</p>
+<p><img src="../images/M-BTscan.png" style="zoom:90%;" /></p>
+<p></br></p>
+<p>If you're using a Bluetooth G4 Share receiver (Platinum) you can also pair it with Bluetooth to xDrip+.<br />
+Enter the receiver serial number or use the phone camera to scan the barcode (need to authorize camera access to xDrip+).</p>
+<p></br></p>
+<p>If you're using a Wifi Wixel, enter the list of receivers as a coma separated list.</p>
+<p>Wifi Wixel / <a href="https://jamorham.github.io/#xdrip-plus">Parakeet</a><br />
+Wifi Wixel + BT Wixel<br />
+Wifi Wixel + Bridge Wixel  </p>
+<p><a href="https://github.com/Cagier/wixel-yDrip">yDrip</a>  </p>
+<p><br></p>
+<p>Once paired, continue to <a href="../startGsensor">Start sensor</a>.</p>
               
             </div>
           </div>
