@@ -56,7 +56,11 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../sensorsettings/">Sensors</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../sensorsettings/">Sensors settings</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../startsensor/">Start and stop sensor</a>
                     </li>
                 </ul>
                 <ul>
@@ -100,7 +104,7 @@
 <h2 id="use-only-one-device">Use only one device</h2>
 <p>If you have a receiver or normally use the vendor app, it's now time to decide which device you will want to use to start and stop your sensors. Use only one and make sure the other devices are either turned off or stored in a shielding bag (or a microwave oven turned OFF). When starting a sensor, do not let the receiver interact before warm-up is complete and you have readings in xDrip+.</p>
 <p></br></p>
-<p>At this point make sure you have a sensor inserted (already started or a new one) with the transmitter attached.</p>
+<p>At this point make sure you have a sensor inserted (already started or a new one) with the transmitter attached. You will not be able to connect to the transmitter if it is not attached to the sensor.</p>
 <p></br></p>
 <h2 id="check-connection">Check connection</h2>
 <p><code>Menu</code> / <code>System Status</code></p>
@@ -108,15 +112,61 @@
 <p><img src="../images/M-SS.png" style="zoom:75%;" /></p>
 <p>Once on this page swipe leftwards to display <code>G5/G6 Status</code></p>
 <p><img src="../images/M-SS-CG61.png" style="zoom:75%;" /></p>
+<p>xDrip+ will first try try to find the transmitter. Keep it close to the phone and leave the app on this page.</p>
+<p><img src="../images/M-SS-CG62.png" style="zoom:75%;" /></p>
+<p>Once found it will try to connect to it. If xDrip+ doesn't find it, check again the transmitter code.</p>
+<p><img src="../images/M-SS-CG63.png" style="zoom:70%;" /></p>
+<p><strong>Note: </strong> the sensor will communicate every 5 minutes, the rest of the time it will be sleeping. Last connected should <strong>not</strong> be more than 5 minutes. If it doesn't connect check your <a href="../g6">settings</a>.</p>
+<p><img src="../images/M-SS-CG64.png" style="zoom:65%;" /></p>
 <p></br></p>
 <h2 id="stop-the-old-sensor-if-necessary">Stop the old sensor if necessary</h2>
-<p>Before starting a new sensor, the previous one should be stopped.</p>
-<p>Open the menu and check  it proposes <code>Start sensor</code></p>
+<p>Before starting a new sensor, the previous one should be stopped (only if you are replacing it). If the sensor is already started and you don't want to replace it, go ahead and start sensor anyway with xDrip+.</p>
+<p><strong>DO NOT STOP A SENSOR UNLESS YOU WANT TO REMOVE IT.</strong></p>
+<p>Before stopping your sensor make sure the command queue is empty:</p>
+<p>Check the status <code>Menu</code> / <code>System Status</code> </p>
+<p>If there are actions pending wait 20 minutes until they expire or get rejected.</p>
+<p><img src="../images/M-SS-CG66.png" style="zoom:70%;" /></p>
+<p>Queued items remaining stuck might be because of bad settings preventing communication to the transmitter. Check your settings <a href="../g6">here</a> and eventually <a href="#empty-the-command-queue">delete them</a>,. </p>
+<p>Open the menu and select <code>Stop sensor</code>. If you only see <code>Start sensor</code> continue <a href="#start-a-sensor-or-use-a-sensor-already-started">below</a> (don't start it yet).</p>
+<p><img src="../images/hamburger_menu.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-StoS.png" style="zoom:75%;" /></p>
+<p>Confirm <code>STOP SENSOR</code></p>
+<p><img src="../images/M-StoSC.png" style="zoom:75%;" /></p>
+<p>Check the status <code>Menu</code> / <code>System Status</code> and wait until your sensor stops.</p>
+<p>The stop command will queue until next connection and then your sensor will stop. It might take more than 5 minutes. Do not send other commands until the queue is empty.</p>
+<p><img src="../images/M-SS-CG65.png" style="zoom:75%;" /></p>
+<p>If you have commands stuck in the queue, <a href="#empty-the-command-queue">delete them</a>, check connection and stop sensor.</p>
+<p></br></p>
+<h2 id="start-a-sensor-or-use-a-sensor-already-started">Start a sensor or use a sensor already started</h2>
+<p>Starting a new sensor with xDrip+ or connecting a sensor started by the vendor app or the receiver is identical.</p>
+<p>Open the menu and select <code>Start sensor</code>. If you only see <code>Stop sensor</code> go back <a href="#stop-the-old-sensor-if-necessary">here</a>.</p>
 <p><img src="../images/hamburger_menu.png" style="zoom:75%;" /></p>
 <p><img src="../images/M-StaS.png" style="zoom:75%;" /></p>
-<h2 id="new-sensor">New sensor</h2>
-<p></br></br></p>
-<p><img src="../images/WIP.gif"/></p>
+<p>Confirm <code>START SENSOR</code></p>
+<p><img src="../images/M-StaSC.png" style="zoom:75%;" /></p>
+<p>If you inserted the sensor today (i.e. not started or recently started), answer <code>YES, TODAY</code></p>
+<p><img src="../images/M-StaSToday.png" style="zoom:75%;" /></p>
+<p>If you answered today select the hour dragging the blue pointer to the correct time. With 12 hours display, tap <code>am</code> or<code>pm</code>. With 24 hours display drop the correct hour either on the inner or outer ring for the correct hour. Tap <code>OK</code>.</p>
+<p><img src="../images/M-StaSHour.png" style="zoom:75%;" /></p>
+<p>Drag the minutes blue pointer to the correct time and tap <code>OK</code>.</p>
+<p><img src="../images/M-StaSMin.png" style="zoom:75%;" /></p>
+<p>Check the status <code>Menu</code> / <code>System Status</code> to monitor startup. You will see the start command queued until next connection.</p>
+<p><img src="../images/M-SS-CG66.png" style="zoom:80%;" /></p>
+<p>After the sensor start command is processed, xDrip+ will ask for the calibration code provided with the sensor (only non-started sensor).</p>
+<p><img src="../images/M-StaSCode.png" style="zoom:75%;" /></p>
+<p>The newly started sensor will start warm-up. You can see the remaining time in system status.</p>
+<p><img src="../images/M-SS-CG67.png" style="zoom:75%;" /></p>
+<p>If you're using an already started sensor you will have readings within 10 minutes. If you see a purple arrow you might have made a mistake in the date and time the sensor was started as BG data is available but won't display during the 2 hours warm-up.</p>
+<p><img src="../images/PurpleArrow.png" style="zoom:70%;" /></p>
+<p></br></p>
+<h2 id="empty-the-command-queue">Empty the command queue</h2>
+<p>Commands are processed by the transmitter one by one when received. Interactions occur every 5 minutes so it might take some time before they get processed. If you still see them pending after 20 minutes you might want to <a href="#check-connection">check connection</a> and then delete them manually.</p>
+<p>From the main view, touch the syringe (treatments) icon.</p>
+<p><img src="../images/Treatments.png" style="zoom:75%;" /></p>
+<p>Long touch the microphone icon. </p>
+<p><img src="../images/T-Voice.png" style="zoom:75%;" /></p>
+<p>Write <code>clear transmitter queue</code> then <code>OK</code>.</p>
+<p><img src="../images/T-V-Clear.png" style="zoom:75%;" /></p>
               
             </div>
           </div>

@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Libre patched - xDrip+</title>
+  <title>Start and stop sensor - xDrip+</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Libre patched";
-    var mkdocs_page_input_path = "libre-patched.md";
+    var mkdocs_page_name = "Start and stop sensor";
+    var mkdocs_page_input_path = "startsensor.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -59,8 +59,12 @@
                     <li class="toctree-l1"><a class="reference internal" href="../sensorsettings/">Sensors settings</a>
                     </li>
                 </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../startsensor/">Start and stop sensor</a>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Start and stop sensor</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#restart-a-sensor">Restart a sensor</a>
+    </li>
+    </ul>
                     </li>
                 </ul>
                 <ul>
@@ -88,7 +92,7 @@
     
       
     
-    <li>Libre patched</li>
+    <li>Start and stop sensor</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -99,11 +103,29 @@
           <div role="main">
             <div class="section">
               
-                <p><img src="../images/WIP.gif"/></p>
+                <h1 id="start-and-stop-a-sensor">Start and stop a sensor</h1>
+<p>If you use a Libre bridge device, starting a sensor is necessary to inform xDrip+ of the exact start time and date (unless not started today) but in no way the app is able to start and stop a sensor. This will cancel all calibrations and force you to enter real BG values. You will get readings before the end of the sensor warm-up but it's strongly recommended to wait the regular 60 minutes as preliminary readings can be complete nonsense. Continue <a href="../startLsensor">here</a>.</p>
+<p>If you're using a G5 or G6 sensor directly connected xDrip+ will <strong>really</strong> attempt to start and stop the sensor (starting a already started sensor won't harm it). Continue <a href="../startGsensor">here</a>.</p>
+<p></br></p>
+<h2 id="restart-a-sensor">Restart a sensor</h2>
+<p><strong>Warning:</strong> This is obviously not recommended unless you have no other choice and you should exercise <strong>extreme caution</strong> if doing so. Modern sensors algorithms have been designed to cope with the insertion trauma and you might experience unreliable readings at least during early restart lifetime, keep in mind your skin will develop a protection layer against the foreign object (sensor filament) that will not match the device design and certifications.</p>
+<p>If you use a Libre 1 sensor (not US) some apps (eDropletNFC, Diabox) will allow you to restart an expired sensor and prolongate its lifetime further than 14 days. </p>
+<p>To restart a G5 sensor you only need to stop it and start it.</p>
+<p>G6 sensors can be restarted like explained above for the G5 only with old transmitters with the first two digits being 80 or 81 (excluding some recent 81 series transmitters that shouldn't be available anymore). Re-batteried G6 transmitters usually match these prerequisites.<br />
+Newer models known as Firefly transmitters (8G and above) require the transmitter being physically removed from the sensor, or the contacts isolated for 20 minutes to simulate sensor replacement. </p>
               
             </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../maintenance/" class="btn btn-neutral float-right" title="Maintenance">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../sensorsettings/" class="btn btn-neutral" title="Sensors settings"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -127,6 +149,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
+        <span><a href="../sensorsettings/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../maintenance/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
