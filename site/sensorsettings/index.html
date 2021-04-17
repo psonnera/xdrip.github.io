@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Sensors settings - xDrip+</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Sensors settings";
+    var mkdocs_page_input_path = "sensorsettings.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> xDrip+</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../install/">Getting started</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Sensors settings</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#g5-g6">G5 G6</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#libre">Libre</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#others">Others</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../startsensor/">Start and stop sensor</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../maintenance/">Maintenance</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">xDrip+</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Sensors settings</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="supported-sensors-and-related-settings">Supported sensors and related settings</h1>
+<h2 id="g5-g6">G5 G6</h2>
+<p>In order to connect xDrip+ to a G5 or G6 sensor you need to uninstall the vendor app from this phone or any other phone connected to it. The receiver will continue to receive the sensor signal as it's using another Bluetooth channel.<br />
+Note that xDrip+ will allow the use of Dex Share servers but will <strong>not upload data to Clarity</strong>. If you decide to use this solution, it is recommended to use <a href="https://www.tidepool.org/">Tidepool</a> or <a href="https://nightscout.github.io/">Nightscout</a> to generate your reports.</p>
+<p>If you want to use xDrip+ but you still want to connect your sensor to the vendor app, you can use xDrip+ either as a Dex Share follower (but you will need network access) or <a href="https://docs.google.com/forms/d/e/1FAIpQLScD76G0Y-BlL4tZljaFkjlwuqhT83QlFM5v6ZEfO7gCU98iJQ/viewform">build your own app</a> (enabling broadcast to xDrip+) and select 640G/670G or Eversense as the data source.</p>
+<p><a href="../g5">G5</a></p>
+<p><a href="../g6">G6</a></p>
+<p></br></p>
+<h2 id="libre">Libre</h2>
+<p>You can use xDrip+ to scan your Libre (<strong>Not</strong> 14 days US version) sensor selecting the any of these data sources if your phone has an NFC reader. Note that there is only limited value in doing so as the only advantage is to be able to calibrate the readings.</p>
+<p>If your phone has an NFC reader you can enable NFC readings.</p>
+<p><code>Menu</code> / <code>Settings</code> / <code>NFC Scan features</code></p>
+<p>Warning: If you have the vendor app installed on the same phone you use for xDrip+ they will conflict upon NFC sensor detection. Make sure to disable one or the other in Android <code>Settings</code> / <code>Apps</code> / <code>xDrip+</code> / <code>Permissions</code> / <code>control Near Field Communication</code>.</p>
+<p><img src="../images/hamburger_menu.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-S.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-S-NFC.png" style="zoom:75%;" /></p>
+<p>Enable <code>Use NFC feature</code>. If your phone allows the use of the vendor app, ignore the warning. It it doesn't: follow the recommendation and perform NFC scans on a sensor close to expiration date to check safety.</p>
+<p><img src="../images/M-S-NFC1.png" style="zoom:75%;" /></p>
+<p>You can enable NFC scan when xDrip+ is not opened with <code>Scan when not in xDrip+</code>.<br />
+If you have difficulties scanning, disable <code>Use faster multi-block reading method</code>.</p>
+<p><img src="../images/M-S-NFC2.png" style="zoom:75%;" /></p>
+<p></br></p>
+<p>In order to get the best of xDrip+ it is recommended that you buy (building one yourself will cost about the same) an additional bridge device doing the sensor scan automatically every 5 minutes. These are not necessary if you have a Libre 2 EU sensor, see below.</p>
+<p>If you use a bridge device (LimiTTer - obsolete, blueReader - obsolete, Blucon, miaomiao / Tomato, Bubble or Droplet) you must uninstall the vendor app or disconnect the bridge from it.</p>
+<p><a href="../libre-bridge">Bridge devices</a> </p>
+<p><a href="../libre-swr50">LibreAlarm</a> (patched SWR50 - obsolete)</p>
+<p><a href="../libre-patched">Patched app</a> (Libre 2 EU)</p>
+<p>Using the Libre 2 with direct Bluetooth connection will conflict with the reader and the vendor app, once connected to xDrip+ the sensor won't be able to send alarms to the device or the vendor app.</p>
+<p><a href="../libre2">Libre 2 EU</a></p>
+<p></br></p>
+<h2 id="others">Others</h2>
+<p><a href="../medtronic">640G/670G</a> (using the Medtronic uploader and a OTG wired glucometer)</p>
+<p><a href="../byo">G5/G6 BYO app</a></p>
+<p><a href="../medtrum">Medtrum</a></p>
+<p><a href="../eversense">Eversense</a> (using the Esel app)</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../startsensor/" class="btn btn-neutral float-right" title="Start and stop sensor">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../install/" class="btn btn-neutral" title="Getting started"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../install/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../startsensor/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

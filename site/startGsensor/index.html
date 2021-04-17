@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Start sensor - xDrip+</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Start sensor";
+    var mkdocs_page_input_path = "startGsensor.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> xDrip+</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../install/">Getting started</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../sensorsettings/">Sensors settings</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../startsensor/">Start and stop sensor</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../maintenance/">Maintenance</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">xDrip+</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Start sensor</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="start-sensor">Start sensor</h1>
+<p>Make sure you have xDrip+ setup correctly: see <a href="../g5">G5</a> <a href="../g6">G6</a>.</p>
+<h2 id="use-only-one-device">Use only one device</h2>
+<p>If you have a receiver or normally use the vendor app, it's now time to decide which device you will want to use to start and stop your sensors. Use only one and make sure the other devices are either turned off or stored in a shielding bag (or a microwave oven turned OFF). When starting a sensor, do not let the receiver interact before warm-up is complete and you have readings in xDrip+.</p>
+<p></br></p>
+<p>At this point make sure you have a sensor inserted (already started or a new one) with the transmitter attached. You will not be able to connect to the transmitter if it is not attached to the sensor.</p>
+<p></br></p>
+<h2 id="check-connection">Check connection</h2>
+<p><code>Menu</code> / <code>System Status</code></p>
+<p><img src="../images/hamburger_menu.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-SS.png" style="zoom:75%;" /></p>
+<p>Once on this page swipe leftwards to display <code>G5/G6 Status</code></p>
+<p><img src="../images/M-SS-CG61.png" style="zoom:75%;" /></p>
+<p>xDrip+ will first try try to find the transmitter. Keep it close to the phone and leave the app on this page.</p>
+<p><img src="../images/M-SS-CG62.png" style="zoom:75%;" /></p>
+<p>Once found it will try to connect to it. If xDrip+ doesn't find it, check again the transmitter code.</p>
+<p><img src="../images/M-SS-CG63.png" style="zoom:70%;" /></p>
+<p><strong>Note: </strong> the sensor will communicate every 5 minutes, the rest of the time it will be sleeping. Last connected should <strong>not</strong> be more than 5 minutes. If it doesn't connect check your <a href="../g6">settings</a>.</p>
+<p><img src="../images/M-SS-CG64.png" style="zoom:65%;" /></p>
+<p></br></p>
+<h2 id="stop-the-old-sensor-if-necessary">Stop the old sensor if necessary</h2>
+<p>Before starting a new sensor, the previous one should be stopped (only if you are replacing it). If the sensor is already started and you don't want to replace it, go ahead and start sensor anyway with xDrip+.</p>
+<p><strong>DO NOT STOP A SENSOR UNLESS YOU WANT TO REMOVE IT.</strong></p>
+<p>Before stopping your sensor make sure the command queue is empty:</p>
+<p>Check the status <code>Menu</code> / <code>System Status</code> </p>
+<p>If there are actions pending wait 20 minutes until they expire or get rejected.</p>
+<p><img src="../images/M-SS-CG66.png" style="zoom:70%;" /></p>
+<p>Queued items remaining stuck might be because of bad settings preventing communication to the transmitter. Check your settings <a href="../g6">here</a> and eventually <a href="#empty-the-command-queue">delete them</a>,. </p>
+<p>Open the menu and select <code>Stop sensor</code>. If you only see <code>Start sensor</code> continue <a href="#start-a-sensor-or-use-a-sensor-already-started">below</a> (don't start it yet).</p>
+<p><img src="../images/hamburger_menu.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-StoS.png" style="zoom:75%;" /></p>
+<p>Confirm <code>STOP SENSOR</code></p>
+<p><img src="../images/M-StoSC.png" style="zoom:75%;" /></p>
+<p>Check the status <code>Menu</code> / <code>System Status</code> and wait until your sensor stops.</p>
+<p>The stop command will queue until next connection and then your sensor will stop. It might take more than 5 minutes. Do not send other commands until the queue is empty.</p>
+<p><img src="../images/M-SS-CG65.png" style="zoom:75%;" /></p>
+<p>If you have commands stuck in the queue, <a href="#empty-the-command-queue">delete them</a>, check connection and stop sensor.</p>
+<p></br></p>
+<h2 id="start-a-sensor-or-use-a-sensor-already-started">Start a sensor or use a sensor already started</h2>
+<p>Starting a new sensor with xDrip+ or connecting a sensor started by the vendor app or the receiver is identical.</p>
+<p>Open the menu and select <code>Start sensor</code>. If you only see <code>Stop sensor</code> go back <a href="#stop-the-old-sensor-if-necessary">here</a>.</p>
+<p><img src="../images/hamburger_menu.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-StaS.png" style="zoom:75%;" /></p>
+<p>Confirm <code>START SENSOR</code></p>
+<p><img src="../images/M-StaSC.png" style="zoom:75%;" /></p>
+<p>If you inserted the sensor today (i.e. not started or recently started), answer <code>YES, TODAY</code></p>
+<p><img src="../images/M-StaSToday.png" style="zoom:75%;" /></p>
+<p>If you answered today select the hour dragging the blue pointer to the correct time. With 12 hours display, tap <code>am</code> or<code>pm</code>. With 24 hours display drop the correct hour either on the inner or outer ring for the correct hour. Tap <code>OK</code>.</p>
+<p><img src="../images/M-StaSHour.png" style="zoom:75%;" /></p>
+<p>Drag the minutes blue pointer to the correct time and tap <code>OK</code>.</p>
+<p><img src="../images/M-StaSMin.png" style="zoom:75%;" /></p>
+<p>Check the status <code>Menu</code> / <code>System Status</code> to monitor startup. You will see the start command queued until next connection.</p>
+<p><img src="../images/M-SS-CG66.png" style="zoom:80%;" /></p>
+<p>After the sensor start command is processed, xDrip+ will ask for the calibration code provided with the sensor (only non-started sensor).</p>
+<p><img src="../images/M-StaSCode.png" style="zoom:75%;" /></p>
+<p>The newly started sensor will start warm-up. You can see the remaining time in system status.</p>
+<p><img src="../images/M-SS-CG67.png" style="zoom:75%;" /></p>
+<p>If you're using an already started sensor you will have readings within 10 minutes. If you see a purple arrow you might have made a mistake in the date and time the sensor was started as BG data is available but won't display during the 2 hours warm-up.</p>
+<p><img src="../images/PurpleArrow.png" style="zoom:70%;" /></p>
+<p></br></p>
+<h2 id="empty-the-command-queue">Empty the command queue</h2>
+<p>Commands are processed by the transmitter one by one when received. Interactions occur every 5 minutes so it might take some time before they get processed. If you still see them pending after 20 minutes you might want to <a href="#check-connection">check connection</a> and then delete them manually.</p>
+<p>From the main view, touch the syringe (treatments) icon.</p>
+<p><img src="../images/Treatments.png" style="zoom:75%;" /></p>
+<p>Long touch the microphone icon. </p>
+<p><img src="../images/T-Voice.png" style="zoom:75%;" /></p>
+<p>Write <code>clear transmitter queue</code> then <code>OK</code>.</p>
+<p><img src="../images/T-V-Clear.png" style="zoom:75%;" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

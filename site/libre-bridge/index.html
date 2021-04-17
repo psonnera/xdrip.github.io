@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Libre bridge - xDrip+</title>
+  <title>Libre and bridge - xDrip+</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Libre bridge";
+    var mkdocs_page_name = "Libre and bridge";
     var mkdocs_page_input_path = "libre-bridge.md";
     var mkdocs_page_url = null;
   </script>
@@ -55,6 +55,18 @@
                     <li class="toctree-l1"><a class="reference internal" href="../install/">Getting started</a>
                     </li>
                 </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../sensorsettings/">Sensors settings</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../startsensor/">Start and stop sensor</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../maintenance/">Maintenance</a>
+                    </li>
+                </ul>
       </div>
     </div>
     </nav>
@@ -76,7 +88,7 @@
     
       
     
-    <li>Libre bridge</li>
+    <li>Libre and bridge</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -87,7 +99,93 @@
           <div role="main">
             <div class="section">
               
-                
+                <h1 id="libre-and-bridge">Libre and bridge</h1>
+<p>Many NFC to Bluetooth bridges are available on the market for Libre sensors.</p>
+<p>A pioneer needs to be recorded here. Thank you Joern for the <a href="https://github.com/JoernL/LimiTTer">LimiTTer</a>. You need to remember this name as it will appear as the default bridge name when the actual device is not identified. Unless you actually have a LimiTTer, seeing this name means your bridge is not connected to xDrip+.</p>
+<p>xDrip+ supports some of them for some sensors.<br />
+<strong>Libre Pro/H/2 US/2 CA are not supported.</strong></p>
+<p>Here below a compatibility table for most popular bridge devices, for compatible models <strong>minimum</strong> firmware version is indicated.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Bridge</th>
+<th align="center">Libre</th>
+<th align="center">Libre 14 days US</th>
+<th align="center">Libre 2 EU</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">BluCon</td>
+<td align="center"><code>Yes</code></td>
+<td align="center"><code>4.2**</code></td>
+<td align="center"><code>4.2*</code></td>
+</tr>
+<tr>
+<td align="center">miaomiao</td>
+<td align="center"><code>Yes</code></td>
+<td align="center"><code>39**</code></td>
+<td align="center"><code>39*</code></td>
+</tr>
+<tr>
+<td align="center">miaomiao2</td>
+<td align="center"><code>Yes</code></td>
+<td align="center"><code>7**</code></td>
+<td align="center"><code>7*</code></td>
+</tr>
+<tr>
+<td align="center">Bubble</td>
+<td align="center"><code>Yes</code></td>
+<td align="center"><code>2.6**</code></td>
+<td align="center"><code>2.6*</code></td>
+</tr>
+<tr>
+<td align="center">Bubble mini</td>
+<td align="center"><code>Yes</code></td>
+<td align="center"><code>2.6**</code></td>
+<td align="center"><code>2.6*</code></td>
+</tr>
+</tbody>
+</table>
+<p><em>Note:</em></p>
+<p><em><code>*</code> external add-on required</em><br />
+<em><code>**</code> external add-on required, not compatible with Android 10+</em></p>
+<p></br></p>
+<h2 id="bridge-settings">Bridge settings</h2>
+<p>Before trying to connect your bridge verify your settings are correct to avoid frequent disconnections.</p>
+<p><code>Menu</code> / <code>Settings</code> / <code>Less Common Settings</code> / <code>Bluetooth Settings</code></p>
+<p><img src="../images/hamburger_menu.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-S.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-S-LCS.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-S-LCS-BT.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-S-LCS-BT-L1.png" style="zoom:75%;" /></p>
+<p>If your bridge loses connection and scanning Bluetooth allows you to recover, enable <code>Use scanning</code>.</p>
+<p><img src="../images/M-S-LCS-BT-L2.png" style="zoom:75%;" /></p>
+<p>For Samsung phones disable <code>Trust Auto-Connect</code>!</p>
+<p><img src="../images/M-S-LCS-BT-TAC.png" style="zoom:75%;" /></p>
+<p>For Android version 8 and above you can enable <code>Use Background Scans</code></p>
+<p><img src="../images/M-S-LCS-BT-L3.png" style="zoom:75%;" /></p>
+<p>If your bridge is a Transmitter_T or a Droplet enable this else keep it disabled.</p>
+<p><img src="../images/M-S-LCS-BT-MK.png" style="zoom:75%;" /></p>
+<p>If you have connection losses you can enable polling mode. It will not do anything useful but keep the Bluetooth link awake.</p>
+<p><img src="../images/M-S-LCS-BT-L4.png" style="zoom:75%;" /></p>
+<p>If your bridge is a BluCon you can enable this else keep it disabled.<br />
+<em>Note: only BluCon bonds to Android, other bridges don't.</em></p>
+<p><img src="../images/M-S-LCS-BT-L5.png" style="zoom:75%;" /></p>
+<p></br></p>
+<p>Restart your phone to make sure all parameters are being taken into account.</p>
+<p></br></p>
+<h2 id="connect-bluetooth-bridge">Connect Bluetooth bridge</h2>
+<p>Make sure your bridge is not connected to anything else: any other device and any other app then scan Bluetooth.</p>
+<p><code>Menu</code> / <code>Bluetooth Scan</code> </p>
+<p><img src="../images/hamburger_menu.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-BTS.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-BTscan.png" style="zoom:75%;" /></p>
+<p>If your bridge doesn't show up make sure it's fully charged (or has a new battery) and reset it.</p>
+<p>Once visible select it.</p>
+<p>Position it correctly on your sensor. Some bridges have very little tolerance in respect with angle and distances to the sensor.</p>
+<p></br></p>
+<p>Continue to <a href="../startLsensor">Start sensor</a>.</p>
               
             </div>
           </div>

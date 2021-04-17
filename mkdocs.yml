@@ -2,7 +2,9 @@ site_name: xDrip+
 nav:
     - Home: index.md
     - Getting started: install.md
+    - Sensors settings: sensorsettings.md
+    - Start and stop sensor: startsensor.md
+    - Maintenance: maintenance.md
  
-   
 theme: 
    name: readthedocs

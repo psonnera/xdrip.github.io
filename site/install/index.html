@@ -72,27 +72,39 @@
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#authorize-background-activity">Authorize background activity</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#enable-location">Enable location</a>
+    </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#select-your-data-source">Select your data source</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#dexcom">Dexcom</a>
+    <li class="toctree-l2"><a class="reference internal" href="#verify-which-version-is-installed">Verify which version is installed</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#freestyle-libre">Freestyle Libre</a>
+    <li class="toctree-l2"><a class="reference internal" href="#make-sure-xdrip-will-not-be-put-to-sleep">Make sure xDrip+ will not be put to sleep</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#select-data-source">Select data source</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#g4-g5-g6">G4 G5 G6</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#libre">Libre</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#others">Others</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#more">More</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#dexcom-g4">Dexcom G4</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#dexcom-g5-g6">Dexcom G5 / G6</a>
-    </li>
-        </ul>
+    <li class="toctree-l3"><a class="reference internal" href="#hardware-data-source-list">Hardware data source list</a>
     </li>
         </ul>
     </li>
     </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../sensorsettings/">Sensors settings</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../startsensor/">Start and stop sensor</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../maintenance/">Maintenance</a>
                     </li>
                 </ul>
       </div>
@@ -158,12 +170,13 @@ If you don't know which one to select you have two choices:</p>
 <h2 id="install-xdrip_1">Install xDrip+</h2>
 <p>Once downloaded, install the xDrip+ apk.</p>
 <p><img src="../images/Install02.png" style="zoom:75%;" /></p>
-<p><strong>You need to authorize installation of apps from unknown sources in Android security settings.</strong><br />
+<p><strong>You need to <a href="https://developer.android.com/distribute/marketing-tools/alternative-distribution#unknown-sources">authorize installation of apps from unknown sources</a> in Android security settings.</strong><br />
 xDrip+ is virus and malware free: being open source and controlled by the main developer make its distribution safe if you download it from GitHub.</p>
 <p><img src="../images/Install04.png" style="zoom:75%;" /></p>
 <p>Once installed, open xDrip+.</p>
 <p><img src="../images/Install03.png" style="zoom:75%;" /></p>
-<p><strong>Read</strong> and acknowledge the important Warning.</p>
+<p><strong>Read</strong> the important Warning.<br />
+Make sure you understand it before selecting <code>I Agree</code>.</p>
 <p><img src="../images/Install05.png" style="zoom:75%;" /></p>
 <p>​   Do NOT use or rely on this software or any associated materials for any medical purpose or decision.<br />
 ​   Do NOT rely on this system for any real-time alarms or time critical data.<br />
@@ -179,11 +192,44 @@ xDrip+ is virus and malware free: being open source and controlled by the main d
 ​   By using this software and/or website you agree that you are over 18 years of age and have read, understood and agree to all of the above.</p>
 <p><img src="../images/Install06.png" style="zoom:75%;" /></p>
 <p></br></p>
+<p><strong>Read</strong> the EULA.<br />
+Make sure you understand it before saving.</p>
+<p>xDrip+ MUST NOT BE USED TO MAKE MEDICAL DECISIONS.<br />
+IT IS A RESEARCH TOOL ONLY AND IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.<br />
+THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.<br />
+SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.</p>
+<p><img src="../images/Install06a.png" style="zoom:75%;" /></p>
+<p></br></p>
 <h4 id="authorize-background-activity">Authorize background activity</h4>
 <p>xDrip+ must have the right to run in background: it must be whitelisted to battery optimization. This is essential to a correct functioning. It should ask you to allow this authorization. If it doesn't or you need to verify this later, you'll have to check it in your phone <code>Settings</code> - <code>Apps</code> - <code>xDrip+</code>. Consult your phone manual as  it will depend on Android version and manufacturer.</p>
 <p><img src="../images/Install07.png" style="zoom:75%;" /></p>
 <p></br></p>
-<h2 id="select-your-data-source">Select your data source</h2>
+<h4 id="enable-location">Enable location</h4>
+<p>For newer Android versions, location is <a href="https://developer.android.com/training/location/permissions">mandatory</a> to allow Bluetooth Low Energy connection.<br />
+If you use xDrip+ with a Bluetooth sensor you <strong>must</strong> enable location and authorize xDrip+ to access it.</p>
+<p><img src="../images/Install16.png" style="zoom:75%;" /></p>
+<p></br></p>
+<h2 id="verify-which-version-is-installed">Verify which version is installed</h2>
+<p>Touch the back button on your phone until you're back to the main screen. Select the hamburger menu top left then <code>System Status</code>.</p>
+<p><img src="../images/hamburger_menu.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-SS.png" style="zoom:75%;" /></p>
+<p>Current version will be displayed after <code>Version</code>. In the example below, March 1st 2021.</p>
+<p><img src="../images/M-SS-Ver.png" style="zoom:75%;" /></p>
+<p>See <a href="../upgradedowngrade">here</a> for upgrade or downgrade.</p>
+<p></br></p>
+<h2 id="make-sure-xdrip-will-not-be-put-to-sleep">Make sure xDrip+ will not be put to sleep</h2>
+<p>These settings are default, but still make sure they are exactly like shown below. Any time your phone will update, come back and check again: disable and enable checkboxes that should be enabled to enforce the settings.</p>
+<p><code>Menu</code> / <code>Settings</code> / <code>Less Common Settings</code> / <code>Other misc options</code></p>
+<p><img src="../images/hamburger_menu.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-S.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-S-LCS.png" style="zoom:75%;" /></p>
+<p><img src="../images/M-S-LCS-OMO.png" style="zoom:75%;" /></p>
+<p><code>Run Collector in Foreground</code> enables the graph in your phone drop down curtain but is essential to keep the app alive.</p>
+<p><code>Battery optimization prompt</code> should be disabled as you should have agreed to <a href="#authorize-background-activity">battery whitelisting</a> during install.</p>
+<p>If you have a Samsung phone allow Samsung workarounds to fix a Samsung non compliance to Android specifications. This should enable automatically.</p>
+<p><img src="../images/M-S-LCS-OMO1.png" style="zoom:75%;" /></p>
+<p></br></p>
+<h2 id="select-data-source">Select data source</h2>
 <p>If you want to connect xDrip+ directly to your sensor, select it in the wizard.</p>
 <p><img src="../images/Install08.png" style="zoom:75%;" /></p>
 <p></br></p>
@@ -193,59 +239,48 @@ xDrip+ is virus and malware free: being open source and controlled by the main d
 <p>If you don't see this button you can bring it back to display with a long press on the xDrip+ icon blood drop and enable source wizard button.</p>
 <p><img src="../images/Install13.png" style="zoom:75%;" /></p>
 <p></br></p>
-<h3 id="dexcom">Dexcom</h3>
-<p>In order to connect xDrip+ to a Dexcom G5 or G6 sensor you need to uninstall the Dexcom app from this phone or any other phone connected to it. The Dexcom receiver will continue to receive the sensor signal as it's using another Bluetooth channel.<br />
-Note that xDrip+ will allow the use of Dexcom Share servers but will <strong>not upload data to Clarity</strong>. If you decide to use this solution, it is recommended to use <a href="https://www.tidepool.org/">Tidepool</a> or <a href="https://nightscout.github.io/">Nightscout</a> to generate your reports.</p>
-<p>If you want to use xDrip+ but you still want to connect your sensor to the Dexcom app, go back to the first page and select Other. You can use xDrip+ either as a Dexcom Share follower (but you will need network access) or <a href="https://docs.google.com/forms/d/e/1FAIpQLScD76G0Y-BlL4tZljaFkjlwuqhT83QlFM5v6ZEfO7gCU98iJQ/viewform?fbzx=2196386787609383750&amp;fbclid=IwAR2aL8Cps1s6W8apUVK-gOqgGpA-McMPJj9Y8emf_P0-_gAsmJs6QwAY-o0">build your own Dexcom app</a> (enabling broadcast to xDrip+) and select 640G/670G or Eversense as the data source.</p>
+<h3 id="g4-g5-g6">G4 G5 G6</h3>
+<p>In order to connect xDrip+ to a G5 or G6 sensor you need to uninstall the vendor app from this phone or any other phone connected to it. The receiver will continue to receive the sensor signal as it's using another Bluetooth channel.<br />
+Note that xDrip+ will allow the use of Dex Share servers but will <strong>not upload data to Clarity</strong>. If you decide to use this solution, it is recommended to use <a href="https://www.tidepool.org/">Tidepool</a> or <a href="https://nightscout.github.io/">Nightscout</a> to generate your reports.</p>
+<p>If you want to use xDrip+ but you still want to connect your sensor to the vendor app, go back to the first page and select Other. You can use xDrip+ either as a Dex Share follower (but you will need network access) or <a href="https://docs.google.com/forms/d/e/1FAIpQLScD76G0Y-BlL4tZljaFkjlwuqhT83QlFM5v6ZEfO7gCU98iJQ/viewform">build your own app</a> (enabling broadcast to xDrip+) and select 640G/670G or Eversense as the data source.</p>
 <p><img src="../images/Install09.png" style="zoom:75%;" /></p>
 <p>Else continue here:</p>
-<p><a href="../dexcom-g4">Dexcom G4</a><br />
-<a href="../dexcom-g5">Dexcom G5</a><br />
-<a href="../dexcom-g6">Dexcom G6</a></p>
+<p><a href="../g4">G4</a><br />
+<a href="../g5">G5</a><br />
+<a href="../g6">G6</a></p>
 <p></br></p>
-<h3 id="freestyle-libre">Freestyle Libre</h3>
+<h3 id="libre">Libre</h3>
 <p>You can use xDrip+ to scan your Libre (<strong>Not</strong> 14 days US version) sensor selecting the any of these data sources if your phone has an NFC reader. Note that there is only limited value in doing so as the only advantage is to be able to calibrate the readings. In order to get the best of xDrip+ it is recommended that you buy an additional bridge device doing the sensor scan automatically every 5 minutes.</p>
 <p><img src="../images/Install10.png" style="zoom:75%;" /></p>
 <p>Continue here:</p>
 <p><a href="../libre-bridge">Bridge devices</a> like LimiTTer (obsolete), blueReader (obsolete), Blucon, miaomiao (Tomato), Bubble or Droplet<br />
 LibreAlarm: Patched <a href="../libre-swr50">Sony SWR50</a><br />
-<a href="../libre-patched">Patched app</a> (Libre 2 not <strong>US</strong> version)<br />
-<a href="../libre2">Libre 2</a> (<strong>not</strong> US version)</p>
+<a href="../libre-patched">Patched app</a> (Libre 2 EU version)<br />
+<a href="../libre2">Libre 2</a> (EU version)</p>
 <p></br></p>
 <h3 id="others">Others</h3>
 <p><img src="../images/Install11.png" style="zoom:75%;" /></p>
-<p><a href="../medtronic">640G/670G</a> with the Medtronic uploader app and the <a href="../dexcom-byo">BYO Dexcom app</a>. <br />
+<p><a href="../medtronic">640G/670G</a> with the Medtronic uploader app and the <a href="../byo">G5/G6 BYO app</a>. <br />
 <a href="../medtrum">Medtrum</a> A6/S7<br />
 <a href="../nightscout">Nightscout Follower</a><br />
-<a href="../dexcom-follow">Dexcom Share Follower</a><br />
+<a href="../dex-follow">Dex Share Follower</a><br />
 <a href="../eversense">Eversense</a> with the Esel app</p>
 <p></br></p>
-<h3 id="more">More</h3>
-<p>If you haven't found the data source you were looking for in the wizard you can select it from <code>Settings</code>.</p>
-<p>Touch the back button on your phone until you're back to the main screen. Select the hamburger menu top left then <code>Settings</code>.</p>
-<p>Select Hardware data source.</p>
+<h3 id="hardware-data-source-list">Hardware data source list</h3>
+<p>If you haven't found the data source you were looking for in the wizard or you want to change it, touch the back button on your phone until you're back to the main screen. Select the hamburger menu top left then <code>Settings</code>. Select <code>Hardware data source</code>.</p>
 <p><img src="../images/hamburger_menu.png" style="zoom:75%;" /></p>
 <p><img src="../images/M-S.png" style="zoom:75%;" /></p>
 <p><img src="../images/M-S-HWDS.png" style="zoom:75%;" /></p>
 <p>This will display the full list of available data sources.</p>
 <p><img src="../images/M-S-HWDS-List.png" style="zoom:75%;" /></p>
-<p></br></p>
-<h4 id="dexcom-g4">Dexcom G4</h4>
-<p>Bluetooth Wixel<br />
-xBridge Wixel<br />
-Wifi Wixel / Parakeet<br />
-Wifi Wixel + BT Wixel<br />
-Wifi Wixel + Bridge Wixel<br />
-G4 Share receiver</p>
-<h4 id="dexcom-g5-g6">Dexcom G5 / G6</h4>
-<p>Dexcom G5<br />
-Dexcom G6</p>
               
             </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../sensorsettings/" class="btn btn-neutral float-right" title="Sensors settings">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -276,6 +311,8 @@ Dexcom G6</p>
       
         <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../sensorsettings/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

@@ -37,7 +37,7 @@ Your data is yours and can be exported in many different ways. xDrip also interc
 
 ## History
 
-[DexDrip](https://github.com/StephenBlackWasAlreadyTaken/DexDrip)  was created by Emma Black in 2014 and then became [xDrip](http://stephenblackwasalreadytaken.github.io/xDrip/), an app collecting CGM data from a G4 receiver or a bridge device and sending them to [Nightscout](https://nightscout.github.io/).  It also came with the follower app [Nightwatch](http://stephenblackwasalreadytaken.github.io/xDrip/).
+[DexDrip](https://github.com/StephenBlackWasAlreadyTaken/DexDrip)  was created by Emma Black in 2014 and then became [xDrip](http://stephenblackwasalreadytaken.github.io/xDrip/), an app collecting CGM data from a G4 receiver or a bridge device and sending them to [Nightscout](https://nightscout.github.io/).  It also came with the follower app [Nightwatch](http://stephenblackwasalreadytaken.github.io/NightWatch/) (obsolete).
 
 This project was then modified by @jamorham to become [xDrip+](https://jamorham.github.io/#xdrip-plus).
 
@@ -46,3 +46,14 @@ This project was then modified by @jamorham to become [xDrip+](https://jamorham.
 <img src="https://avatars.githubusercontent.com/u/12565568" style="zoom:33%;" />
 
 xDrip+ is published by the Nightscout Foundation.
+
+</br>
+
+## **Disclaimer And Warning**
+
+- All information, thought, and code described here is intended for informational and educational purposes only. Use xDrip+ at your own risk, and do not use the information or code to make medical decisions.
+- Use of [code from github.com](https://github.com/NightscoutFoundation/xDrip) is without warranty or formal support of any kind. Please review this repository’s LICENSE for details.
+- All product and company names, trademarks, servicemarks, registered trademarks, and registered servicemarks are the property of their respective holders. Their use is for information purposes and does not imply any affiliation with or endorsement by them.
+
+**Please note:** this project has no association with and is not endorsed by: [Abbott Laboratories](https://www.abbott.com/), [Ascenia](https://www.ascensia.com/), [Companion Medical](https://www.companionmedical.com/), [Dexcom](https://www.dexcom.com/), [Medtronic](https://www.medtronic.com/), [Lifescan](https://www.lifescan.com/), [Medtrum](https://www.medtrum.com/), [Pendiq](https://pendiq.com/), [Roche](https://www.roche.com/), [Senseonics](https://www.senseonics.com/).
+

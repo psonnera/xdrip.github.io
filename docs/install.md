@@ -50,7 +50,7 @@ Once downloaded, install the xDrip+ apk.
 
 <img src="../images/Install02.png" style="zoom:75%;" />
 
-**You need to authorize installation of apps from unknown sources in Android security settings.**  
+**You need to [authorize installation of apps from unknown sources](https://developer.android.com/distribute/marketing-tools/alternative-distribution#unknown-sources) in Android security settings.**  
 xDrip+ is virus and malware free: being open source and controlled by the main developer make its distribution safe if you download it from GitHub.
 
 <img src="../images/Install04.png" style="zoom:75%;" />
@@ -59,7 +59,8 @@ Once installed, open xDrip+.
 
 <img src="../images/Install03.png" style="zoom:75%;" />
 
-**Read** and acknowledge the important Warning.
+**Read** the important Warning.  
+Make sure you understand it before selecting `I Agree`.
 
 <img src="../images/Install05.png" style="zoom:75%;" />
 
@@ -80,6 +81,18 @@ Once installed, open xDrip+.
 
 </br>
 
+**Read** the EULA.  
+Make sure you understand it before saving.
+
+xDrip+ MUST NOT BE USED TO MAKE MEDICAL DECISIONS.  
+IT IS A RESEARCH TOOL ONLY AND IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  
+THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  
+SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+
+<img src="../images/Install06a.png" style="zoom:75%;" />
+
+</br>
+
 #### Authorize background activity
 
 xDrip+ must have the right to run in background: it must be whitelisted to battery optimization. This is essential to a correct functioning. It should ask you to allow this authorization. If it doesn't or you need to verify this later, you'll have to check it in your phone `Settings` - `Apps` - `xDrip+`. Consult your phone manual as  it will depend on Android version and manufacturer.
@@ -88,7 +101,56 @@ xDrip+ must have the right to run in background: it must be whitelisted to batte
 
 </br>
 
-## Select your data source
+#### Enable location
+
+For newer Android versions, location is [mandatory](https://developer.android.com/training/location/permissions) to allow Bluetooth Low Energy connection.  
+If you use xDrip+ with a Bluetooth sensor you **must** enable location and authorize xDrip+ to access it.
+
+<img src="../images/Install16.png" style="zoom:75%;" />
+
+</br>
+
+## Verify which version is installed
+
+Touch the back button on your phone until you're back to the main screen. Select the hamburger menu top left then `System Status`.
+
+<img src="../images/hamburger_menu.png" style="zoom:75%;" />
+
+<img src="../images/M-SS.png" style="zoom:75%;" />
+
+Current version will be displayed after `Version`. In the example below, March 1st 2021.
+
+<img src="../images/M-SS-Ver.png" style="zoom:75%;" />
+
+See [here](../upgradedowngrade) for upgrade or downgrade.
+
+</br>
+
+## Make sure xDrip+ will not be put to sleep
+
+These settings are default, but still make sure they are exactly like shown below. Any time your phone will update, come back and check again: disable and enable checkboxes that should be enabled to enforce the settings.
+
+`Menu` / `Settings` / `Less Common Settings` / `Other misc options`
+
+<img src="../images/hamburger_menu.png" style="zoom:75%;" />
+
+<img src="../images/M-S.png" style="zoom:75%;" />
+
+<img src="../images/M-S-LCS.png" style="zoom:75%;" />
+
+<img src="../images/M-S-LCS-OMO.png" style="zoom:75%;" />
+
+`Run Collector in Foreground` enables the graph in your phone drop down curtain but is essential to keep the app alive.
+
+`Battery optimization prompt` should be disabled as you should have agreed to [battery whitelisting](#authorize-background-activity) during install.
+
+If you have a Samsung phone allow Samsung workarounds to fix a Samsung non compliance to Android specifications. This should enable automatically.
+
+<img src="../images/M-S-LCS-OMO1.png" style="zoom:75%;" />
+
+</br>
+
+## Select data source
 
 If you want to connect xDrip+ directly to your sensor, select it in the wizard.
 
@@ -135,8 +197,8 @@ Continue here:
 
 [Bridge devices](../libre-bridge) like LimiTTer (obsolete), blueReader (obsolete), Blucon, miaomiao (Tomato), Bubble or Droplet  
 LibreAlarm: Patched [Sony SWR50](../libre-swr50)  
-[Patched app](../libre-patched) (Libre 2 not **US** version)  
-[Libre 2](../libre2) (**not** US version)
+[Patched app](../libre-patched) (Libre 2 EU version)  
+[Libre 2](../libre2) (EU version)
 
 </br>
 
@@ -154,11 +216,7 @@ LibreAlarm: Patched [Sony SWR50](../libre-swr50)
 
 ### Hardware data source list
 
-If you haven't found the data source you were looking for in the wizard or you want to change it, you can select it from `Settings`.
-
-Touch the back button on your phone until you're back to the main screen. Select the hamburger menu top left then `Settings`.
-
-Select Hardware data source.
+If you haven't found the data source you were looking for in the wizard or you want to change it, touch the back button on your phone until you're back to the main screen. Select the hamburger menu top left then `Settings`. Select `Hardware data source`.
 
 <img src="../images/hamburger_menu.png" style="zoom:75%;" />
 
@@ -169,22 +227,4 @@ Select Hardware data source.
 This will display the full list of available data sources.
 
 <img src="../images/M-S-HWDS-List.png" style="zoom:75%;" />
-
-</br>
-
-**G4**
-
-Bluetooth Wixel  
-xBridge Wixel  
-Wifi Wixel / Parakeet  
-Wifi Wixel + BT Wixel  
-Wifi Wixel + Bridge Wixel  
-G4 Share receiver
-
-Continue here [G4](../g4) 
-
-**G5 / G6**
-
-[G5](../g5)  
-[G6](../g6)
 
