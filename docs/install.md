@@ -104,7 +104,7 @@ xDrip+ must have the right to run in background: it must be whitelisted to batte
 #### Enable location
 
 For newer Android versions, location is [mandatory](https://developer.android.com/training/location/permissions) to allow Bluetooth Low Energy connection.  
-If you use xDrip+ with a Bluetooth sensor you **must** enable location and authorize xDrip+ to access it.
+If you use xDrip+ with a Bluetooth sensor you **must** enable location and authorize xDrip+ to access it. Consult your phone manual as  it will depend on Android version and manufacturer.
 
 <img src="../images/Install16.png" style="zoom:75%;" />
 

@@ -9,13 +9,13 @@ xDrip+ supports some of them for some sensors.
 
 Here below a compatibility table for most popular bridge devices, for compatible models **minimum** firmware version is indicated.
 
-|   Bridge    | Libre | Libre 14 days US | Libre 2 EU |
-| :---------: | :---: | :--------------: | :--------: |
-|   BluCon    | `Yes` |     `4.2**`      |   `4.2*`   |
-|  miaomiao   | `Yes` |      `39**`      |   `39*`    |
-|  miaomiao2  | `Yes` |      `7**`       |    `7*`    |
-|   Bubble    | `Yes` |     `2.6**`      |   `2.6*`   |
-| Bubble mini | `Yes` |     `2.6**`      |   `2.6*`   |
+| Bridge brand | - Libre 1 - | - 14 days US - | - Libre 2 EU - |
+| :----------: | :---------: | :------------: | :------------: |
+|    BluCon    |    `Yes`    |    `4.2**`     |     `4.2*`     |
+|   miaomiao   |    `Yes`    |     `39**`     |     `39*`      |
+|  miaomiao2   |    `Yes`    |     `7**`      |      `7*`      |
+|    Bubble    |    `Yes`    |    `2.6**`     |     `2.6*`     |
+| Bubble mini  |    `Yes`    |    `2.6**`     |     `2.6*`     |
 
 *Note:*
 

@@ -1,8 +1,12 @@
 # Start and stop a sensor
 
-If you use a Libre bridge device, starting a sensor is necessary to inform xDrip+ of the exact start time and date (unless not started today) but in no way the app is able to start and stop a sensor. This will cancel all calibrations and force you to enter real BG values. You will get readings before the end of the sensor warm-up but it's strongly recommended to wait the regular 60 minutes as preliminary readings can be complete nonsense. Continue [here](../startLsensor).
+If you use a Libre bridge device, starting a sensor is necessary to inform xDrip+ of the exact start time and date (unless not started today) but in no way the app is able to start and stop a sensor. This will cancel all calibrations and force you to enter real BG values.
 
-If you're using a G5 or G6 sensor directly connected xDrip+ will **really** attempt to start and stop the sensor (starting a already started sensor won't harm it). Continue [here](../startGsensor).
+Libre sensors continue [here](../startLsensor).
+
+If you're using a G5 or G6 sensor directly connected xDrip+ will **really** attempt to start and stop the sensor (starting a already started sensor won't harm it). 
+
+G5 and G6 sensors continue [here](../startGsensor).
 
 </br>
 
